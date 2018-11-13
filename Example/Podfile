@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LZNet_Example' do
+  pod 'LZNet', :path => '../'
+
+  target 'LZNet_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
