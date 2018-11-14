@@ -7,6 +7,7 @@
 //
 
 #import "LZViewController.h"
+#import "LZExpressDataRequest.h"
 
 @interface LZViewController ()
 
@@ -20,10 +21,17 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)beginRequest:(id)sender {
+    [LZExpressDataRequest requestCommentWithParameters:nil withIndicatorView:self.view onRequestFinished:^(LZBaseDataRequest * _Nonnull request) {
+        //请求成功
+        if (request.isSuccess) {
+            
+        }
+    } onRequestFailed:^(LZBaseDataRequest * _Nonnull request) {
+        //请求失败
+        
+    }];
 }
+
 
 @end

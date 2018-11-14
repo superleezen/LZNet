@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2E2A9F682DF48FBCF8427D93 /* Pods_LZNet_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A103C7D235E62EA93734049 /* Pods_LZNet_Example.framework */; };
+		365E5E6B219BB69B000B2B69 /* LZBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 365E5E6A219BB69B000B2B69 /* LZBaseRequest.m */; };
+		365E5E70219BD450000B2B69 /* LZExpressDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 365E5E6F219BD450000B2B69 /* LZExpressDataRequest.m */; };
+		365E5E73219BED5B000B2B69 /* LZBaseRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 365E5E72219BED5B000B2B69 /* LZBaseRequestResult.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,8 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2807487FE96703F58FAFD3BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		3337FE4FB49FBF0DD1DD294B /* LZNet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LZNet.podspec; path = ../LZNet.podspec; sourceTree = "<group>"; };
+		2807487FE96703F58FAFD3BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3337FE4FB49FBF0DD1DD294B /* LZNet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LZNet.podspec; path = ../LZNet.podspec; sourceTree = "<group>"; };
+		365E5E69219BB69B000B2B69 /* LZBaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZBaseRequest.h; sourceTree = "<group>"; };
+		365E5E6A219BB69B000B2B69 /* LZBaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZBaseRequest.m; sourceTree = "<group>"; };
+		365E5E6E219BD450000B2B69 /* LZExpressDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZExpressDataRequest.h; sourceTree = "<group>"; };
+		365E5E6F219BD450000B2B69 /* LZExpressDataRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZExpressDataRequest.m; sourceTree = "<group>"; };
+		365E5E71219BED5B000B2B69 /* LZBaseRequestResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZBaseRequestResult.h; sourceTree = "<group>"; };
+		365E5E72219BED5B000B2B69 /* LZBaseRequestResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZBaseRequestResult.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LZNet_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZNet_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,7 +69,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		63D1F99275B4E3A949D27E93 /* Pods-LZNet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZNet_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZNet_Tests/Pods-LZNet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7822D2EEBFC6B636D8D08ECA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7822D2EEBFC6B636D8D08ECA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7A103C7D235E62EA93734049 /* Pods_LZNet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZNet_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5B5564B26D450BDF7D4F40A /* Pods-LZNet_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZNet_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZNet_Example/Pods-LZNet_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +104,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		365E5E6C219BD40F000B2B69 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				365E5E6D219BD41A000B2B69 /* Request */,
+				365E5E69219BB69B000B2B69 /* LZBaseRequest.h */,
+				365E5E6A219BB69B000B2B69 /* LZBaseRequest.m */,
+				365E5E71219BED5B000B2B69 /* LZBaseRequestResult.h */,
+				365E5E72219BED5B000B2B69 /* LZBaseRequestResult.m */,
+			);
+			name = Net;
+			sourceTree = "<group>";
+		};
+		365E5E6D219BD41A000B2B69 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				365E5E6E219BD450000B2B69 /* LZExpressDataRequest.h */,
+				365E5E6F219BD450000B2B69 /* LZExpressDataRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +162,7 @@
 		6003F593195388D20070C39A /* Example for LZNet */ = {
 			isa = PBXGroup;
 			children = (
+				365E5E6C219BD40F000B2B69 /* Net */,
 				6003F59C195388D20070C39A /* LZAppDelegate.h */,
 				6003F59D195388D20070C39A /* LZAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -347,12 +378,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LZNet_Example/Pods-LZNet_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/LZNet/LZNet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LZNet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +400,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365E5E6B219BB69B000B2B69 /* LZBaseRequest.m in Sources */,
 				6003F59E195388D20070C39A /* LZAppDelegate.m in Sources */,
+				365E5E70219BD450000B2B69 /* LZExpressDataRequest.m in Sources */,
+				365E5E73219BED5B000B2B69 /* LZBaseRequestResult.m in Sources */,
 				6003F5A7195388D20070C39A /* LZViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

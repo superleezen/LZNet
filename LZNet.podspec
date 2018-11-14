@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LZNet'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of LZNet.'
+  s.version          = '1.0.0'
+  s.summary          = 'A custom network framework.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,40 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/emailoflizheng@126.com/LZNet'
+  s.homepage         = 'https://github.com/superleezen/LZNet'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'emailoflizheng@126.com' => 'lizheng@limikeji.com' }
-  s.source           = { :git => 'https://github.com/emailoflizheng@126.com/LZNet.git', :tag => s.version.to_s }
+  s.license          = 'MIT'
+  s.author           = { 'emailoflizheng@126.com' => 'leezen' }
+  s.source           = { :git => 'https://github.com/superleezen/LZNet.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LZNet/Classes/**/*'
+  s.source_files = 'LZNet/**/*.{h,m}'
+    s.subspec 'Request' do |reqeust|
+        reqeust.source_files = 'LZNet/**/Request/*.{h,m}'
+    end
   
+    s.subspec 'Result' do |result|
+        result.source_files = 'LZNet/**/Result/*.{h,m}'
+    end
+
+    s.subspec 'HUD' do |hud|
+        hud.source_files = 'LZNet/**/HUD/*.{h,m}'
+    end
+
+    s.subspec 'Manager' do |manager|
+        manager.source_files = 'LZNet/**/Manager/*.{h,m}'
+    end
+
+    s.subspec 'Handler' do |handler|
+        handler.source_files = 'LZNet/**/Handler/*.{h,m}'
+    end
   # s.resource_bundles = {
   #   'LZNet' => ['LZNet/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking', '3.1.0'
 end

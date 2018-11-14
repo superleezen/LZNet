@@ -1,0 +1,6 @@
+framework module Pods_LZNet_Tests {
+  umbrella header "Pods-LZNet_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
