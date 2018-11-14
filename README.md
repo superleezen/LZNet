@@ -22,7 +22,7 @@ pod 'LZNet'
 
 ## Author
 
-emailoflizheng@126.com, lizheng@limikeji.com
+emailoflizheng@126.com, leezen
 
 ## License
 
