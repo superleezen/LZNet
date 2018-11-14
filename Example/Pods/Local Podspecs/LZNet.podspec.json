@@ -1,24 +1,21 @@
 {
   "name": "LZNet",
-  "version": "0.1.0",
-  "summary": "A short description of LZNet.",
+  "version": "1.0.0",
+  "summary": "A custom network framework.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/emailoflizheng@126.com/LZNet",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
+  "homepage": "https://github.com/superleezen/LZNet",
+  "license": "MIT",
   "authors": {
     "emailoflizheng@126.com": "leezen"
   },
   "source": {
-    "git": "https://github.com/emailoflizheng@126.com/LZNet.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/superleezen/LZNet.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "LZNet/**/*.{h,m}",
+  "source_files": "LZNet/*.{h,m}",
   "dependencies": {
     "AFNetworking": [
       "3.1.0"
@@ -27,23 +24,28 @@
   "subspecs": [
     {
       "name": "Request",
-      "source_files": "LZNet/**/Request/*.{h,m}"
+      "source_files": "LZNet/Request/*.{h,m}"
     },
     {
       "name": "Result",
-      "source_files": "LZNet/**/Result/*.{h,m}"
+      "source_files": "LZNet/Result/*.{h,m}"
     },
     {
       "name": "HUD",
-      "source_files": "LZNet/**/HUD/*.{h,m}"
+      "source_files": "LZNet/HUD/*.{h,m}"
     },
     {
       "name": "Manager",
-      "source_files": "LZNet/**/Manager/*.{h,m}"
+      "dependencies": {
+        "LZNet/Request": [
+
+        ]
+      },
+      "source_files": "LZNet/Manager/*.{h,m}"
     },
     {
       "name": "Handler",
-      "source_files": "LZNet/**/Handler/*.{h,m}"
+      "source_files": "LZNet/Handler/*.{h,m}"
     }
   ]
 }

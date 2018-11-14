@@ -23,32 +23,32 @@ TODO: Add long description of the pod here.
 
   s.homepage         = 'https://github.com/superleezen/LZNet'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = 'MIT'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'emailoflizheng@126.com' => 'leezen' }
   s.source           = { :git => 'https://github.com/superleezen/LZNet.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LZNet/**/*.{h,m}'
-    s.subspec 'Request' do |reqeust|
-        reqeust.source_files = 'LZNet/**/Request/*.{h,m}'
-    end
+  s.source_files = 'LZNet/*.{h,m}'
   
     s.subspec 'Result' do |result|
-        result.source_files = 'LZNet/**/Result/*.{h,m}'
+        result.source_files = 'LZNet/Result/*.{h,m}'
     end
 
     s.subspec 'HUD' do |hud|
-        hud.source_files = 'LZNet/**/HUD/*.{h,m}'
-    end
-
-    s.subspec 'Manager' do |manager|
-        manager.source_files = 'LZNet/**/Manager/*.{h,m}'
+        hud.source_files = 'LZNet/HUD/*.{h,m}'
     end
 
     s.subspec 'Handler' do |handler|
-        handler.source_files = 'LZNet/**/Handler/*.{h,m}'
+        handler.source_files = 'LZNet/Handler/*.{h,m}'
+    end
+
+    s.subspec 'Request' do |reqeust|
+        reqeust.dependency 'LZNet/HUD'
+        reqeust.dependency 'LZNet/Result'
+        reqeust.dependency 'LZNet/Handler'
+        reqeust.source_files = 'LZNet/Request/*.{h,m}'
     end
   # s.resource_bundles = {
   #   'LZNet' => ['LZNet/Assets/*.png']

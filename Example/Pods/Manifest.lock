@@ -14,22 +14,23 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - LZNet (0.1.0):
+  - LZNet (1.0.0):
     - AFNetworking (= 3.1.0)
-    - LZNet/Handler (= 0.1.0)
-    - LZNet/HUD (= 0.1.0)
-    - LZNet/Manager (= 0.1.0)
-    - LZNet/Request (= 0.1.0)
-    - LZNet/Result (= 0.1.0)
-  - LZNet/Handler (0.1.0):
+    - LZNet/Handler (= 1.0.0)
+    - LZNet/HUD (= 1.0.0)
+    - LZNet/Manager (= 1.0.0)
+    - LZNet/Request (= 1.0.0)
+    - LZNet/Result (= 1.0.0)
+  - LZNet/Handler (1.0.0):
     - AFNetworking (= 3.1.0)
-  - LZNet/HUD (0.1.0):
+  - LZNet/HUD (1.0.0):
     - AFNetworking (= 3.1.0)
-  - LZNet/Manager (0.1.0):
+  - LZNet/Manager (1.0.0):
     - AFNetworking (= 3.1.0)
-  - LZNet/Request (0.1.0):
+    - LZNet/Request
+  - LZNet/Request (1.0.0):
     - AFNetworking (= 3.1.0)
-  - LZNet/Result (0.1.0):
+  - LZNet/Result (1.0.0):
     - AFNetworking (= 3.1.0)
 
 DEPENDENCIES:
@@ -45,7 +46,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  LZNet: 8dbe87395c89d0c1aa9d83328df3340a3f94f4b5
+  LZNet: 43e5a1c596af9a102c879dac0f9e9d92a104e640
 
 PODFILE CHECKSUM: ce54eaf8d05cdba5759f3a6462cd09d874ab7a3c
 
