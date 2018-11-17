@@ -14,9 +14,9 @@
 #import "LZNetHUD.h"
 #import "LZRequestDataHandler.h"
 #import "LZRequestJsonDataHandler.h"
-#import "LZDataRequestManager.h"
 #import "LZAFNBaseDataRequest.h"
 #import "LZBaseDataRequest.h"
+#import "LZDataRequestManager.h"
 #import "LZRequestResult.h"
 
 FOUNDATION_EXPORT double LZNetVersionNumber;

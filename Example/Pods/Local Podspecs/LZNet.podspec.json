@@ -1,16 +1,19 @@
 {
   "name": "LZNet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "A custom network framework.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/superleezen/LZNet",
-  "license": "MIT",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   "authors": {
     "emailoflizheng@126.com": "leezen"
   },
   "source": {
     "git": "https://github.com/superleezen/LZNet.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -23,10 +26,6 @@
   },
   "subspecs": [
     {
-      "name": "Request",
-      "source_files": "LZNet/Request/*.{h,m}"
-    },
-    {
       "name": "Result",
       "source_files": "LZNet/Result/*.{h,m}"
     },
@@ -35,17 +34,23 @@
       "source_files": "LZNet/HUD/*.{h,m}"
     },
     {
-      "name": "Manager",
+      "name": "Handler",
+      "source_files": "LZNet/Handler/*.{h,m}"
+    },
+    {
+      "name": "Request",
       "dependencies": {
-        "LZNet/Request": [
+        "LZNet/HUD": [
+
+        ],
+        "LZNet/Result": [
+
+        ],
+        "LZNet/Handler": [
 
         ]
       },
-      "source_files": "LZNet/Manager/*.{h,m}"
-    },
-    {
-      "name": "Handler",
-      "source_files": "LZNet/Handler/*.{h,m}"
+      "source_files": "LZNet/Request/*.{h,m}"
     }
   ]
 }
